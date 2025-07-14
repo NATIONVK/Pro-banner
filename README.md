@@ -1,1 +1,30 @@
-# Pro-banner
+import os
+import pyfiglet
+from termcolor import colored
+import time
+
+# Clear screen
+os.system("clear")
+
+# Light color palette
+colors = ["white", "light_cyan", "light_green", "light_blue", "light_yellow"]
+
+# Loading effect
+print(colored("Starting PRO NATION VK Terminal Banner...", "light_green"))
+time.sleep(1)
+
+# Render ASCII art
+banner = pyfiglet.figlet_format("PRO NATION VK")
+print(colored(banner, "light_cyan"))
+
+# Decoration line
+print(colored("=" * 60, "light_yellow"))
+
+# Info block
+print(colored("Welcome to the official terminal of PRO NATION VK", "light_blue"))
+print(colored("Creator : @your_name", "light_green"))
+print(colored("Version : 1.0", "light_green"))
+print(colored("Use ethically. Built with ❤️ for the Nation.", "light_blue"))
+
+# Final decoration line
+print(colored("=" * 60, "light_yellow"))
